@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+/*header*/
 header{
     text-align: center;
     width: 100%;
@@ -12,7 +13,7 @@ header{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-/* section 1 do header*/
+/* pt 1 do header*/
 #he1{
     color: white;
     padding-top: 0.5rem;
@@ -42,6 +43,7 @@ header{
 }
 #link01:hover{
     color: rgb(184, 184, 183);
+    transition: 0.3s;
 }
 #link02{
     margin: 0.5rem;
@@ -54,9 +56,10 @@ header{
 #link02:hover{
     background-color:  rgb(184, 184, 183);
     color: rgb(255, 0, 0);
+    transition: 0.3s;
 
 }
-/* section 2 do header*/
+/* pt 2 do header*/
 #he2{
     margin-top: 3rem;
     display: flex;
@@ -91,6 +94,9 @@ header{
     width: 85%;
     height: 100%;
 }
+#endereço:focus{
+    outline: 0;
+}
 #seta{
     width: 10%;
     height: 90%;
@@ -104,16 +110,71 @@ header{
     justify-content: center;
     align-items: center;
 }
-
 #seta img{
     width: 60%;
     height: 80%;
 }
 #seta:hover{
     background-color: brown;
+    transition: 0.5s;
 }
 #endr_slv{
     color: white;
+}
+#endr_slv:hover{
+    color: rgb(184, 184, 183);
+    transition: 0.3s;
+    text-decoration: none;
+}
+/*main*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#sect01{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
 
+}
+.itens{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.itensimg {
+    width: 10rem;
+    height: 10rem;
+
+}
+.itens h3{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.itens p{
+    font-weight: bold;
+    width: 70%;
+}
+.itens a{
+    margin-top: 1rem ;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(236, 3, 3);
+    display: flex;
+    align-items: center;
+}
+.itens a img{
+    width: 10%;
+    padding-left: 0.3rem;
+}
+.itens a:hover{
+    color: brown;
+    transition: 0.5s;
 }
 

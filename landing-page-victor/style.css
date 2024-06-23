@@ -184,24 +184,28 @@ main{
 }
 /*section2*/
 #sect02{
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     gap: 1rem;
 }
-#sect02 div{
+#sect02 img{
+    margin-bottom: -1.5rem;
+    z-index: 10;
+}
+.div-section{
     width: 40%;
 }
-#sect02 img{
+.img-section{
     width: 60%;
 }
-#sect02 div h3{
+.h3-section{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-#sect02 div a{  
+.button-section{  
     margin-top: 1rem ;
     text-decoration: none;
     background-color: rgb(236, 3, 3);
@@ -210,9 +214,49 @@ main{
     color: white;
     font-weight: bold;
 }
-#sect02 div a:hover{
+.button-section:hover{
     color: brown;
     transition: 0.3s;
 }
-
-
+/*section3*/
+#box{
+    background-color: rgb(255, 219, 219);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+#sect03{
+    padding-top: 5rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+/*footer*/
+footer{
+    background-color: rgb(43, 43, 43);
+    color: rgb(219, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ft01{
+    padding-top: 2rem ;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.lista p{
+    font-weight: bold;
+}
+.lista ul{
+    list-style: none;
+    text-align: left;
+    padding: 1rem 0;
+}
+.lista ul li{
+    
+}

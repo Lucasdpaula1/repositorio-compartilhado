@@ -40,6 +40,7 @@ header{
 #link01{
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 #link01:hover{
     color: rgb(184, 184, 183);
@@ -52,6 +53,7 @@ header{
     background-color: white;
     padding: 0.5rem;
     border-radius: 20px;
+    font-weight: bold;
 }
 #link02:hover{
     background-color:  rgb(184, 184, 183);
@@ -130,7 +132,9 @@ header{
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #sect01{
     margin-top: 15rem;
@@ -157,12 +161,13 @@ main{
     margin: 1rem 0;
     font-size: 1.5rem;
 }
-.itens p{
+.subtexto{
+    color: rgb(83, 83, 83);
     font-weight: bold;
     width: 70%;
+    margin-bottom: 1rem;
 }
 .itens a{
-    margin-top: 1rem ;
     text-decoration: none;
     font-weight: bold;
     color: rgb(236, 3, 3);
@@ -175,6 +180,39 @@ main{
 }
 .itens a:hover{
     color: brown;
-    transition: 0.5s;
+    transition: 0.3s;
 }
+/*section2*/
+#sect02{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    gap: 1rem;
+}
+#sect02 div{
+    width: 40%;
+}
+#sect02 img{
+    width: 60%;
+}
+#sect02 div h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#sect02 div a{  
+    margin-top: 1rem ;
+    text-decoration: none;
+    background-color: rgb(236, 3, 3);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+#sect02 div a:hover{
+    color: brown;
+    transition: 0.3s;
+}
+
 

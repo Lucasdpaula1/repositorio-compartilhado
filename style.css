@@ -1,4 +1,5 @@
 /* global */
+/* tags globais */
 * {
   padding: 0;
   margin: 0;
@@ -14,17 +15,19 @@ html {
   src: local(arial),
     url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 }
-@keyframes bloco-header{
+@keyframes bloco-header {
   from {
     transform: translateX(0);
   }
-  to   {transform: translateY(100%); }
+  to {
+    transform: translateY(100%);
+  }
 }
-
 
 body {
   font-family: font-primaria;
 }
+
 header {
   background-color: white;
 
@@ -48,6 +51,12 @@ nav {
   align-self: stretch;
   justify-content: stretch;
 }
+h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
 .imagem-header {
   background-image: url(./img/images.jpg);
   background-size: cover;
@@ -78,12 +87,6 @@ nav {
 }
 .contanier-li ul {
   display: none;
-  
- 
- 
- 
-  
-  
 }
 .lista-header a {
   display: flex;
@@ -118,103 +121,55 @@ nav {
   position: absolute;
   left: 10%;
   top: 10%;
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   transform: translate(0.1rem, 7rem);
-  
+
   padding: 2rem;
-  
-  
- 
- 
+  background-color: white;
+
   box-shadow: inset 0rem 0rem 1.2rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
-.transition-ancora-header{
-  
-  
+.transition-ancora-header {
   position: relative;
   transition: color 1s;
   width: 100px;
   color: black !important;
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }
 
-
-  
-.transition-ancora-header::before{
+.transition-ancora-header:before {
   content: "";
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 0.5rem;
-  bottom: 0;
-  left: 50%;
-  
+  height: 0.1rem;
+  bottom: 0%;
+  left: 0;
 
-  background-color: #150601;
+  background-color: #ff4500;
+  opacity: 0.5;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transform-origin: left;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear;
 }
-.transition-ancora-header:hover::before{
+.transition-ancora-header:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  transform-origin: right;
 }
-
 
 ul .transition-ancora-header:hover {
   visibility: visible;
- 
-  
-
-
- 
-  
   width: max-content;
   padding: 0.5rem;
-
-  
-  
-  transition-timing-function:linear;
+  transition-timing-function: linear;
   background: none;
-
-  transition: color 0.5s, width 1s;
-  
+  transition: color 0.5s;
   padding-bottom: 0;
-  
-  
-  
-  
-
-
-
- 
-  
-
-  
- color: #ff4500 !important;
-  
-  
-
+  color: #ff4500 !important;
 
   /* background-color: black;
   color: red; */
@@ -230,3 +185,79 @@ ul .transition-ancora-header:hover {
   background-image: linear-gradient(90deg, #150601, #ff4500);
 }
 /* main section 1 */
+/* global section logistica */
+.section-safe-faster {
+  height: 25vmax;
+  display: flex;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 9, 0.9),
+      rgba(19, 19, 1, 0.189)
+    ),
+    url(https://img.freepik.com/fotos-gratis/porto-de-navegacao-movimentado-com-comercio-de-contentores-em-acao_91128-4581.jpg?w=1380&t=st=1719345705~exp=1719346305~hmac=96c86e366153114bb031fffa1a64a96b0afe6d36030ae07be91d811ede50d02e);
+  background-size: cover;
+  backdrop-filter: black;
+  background-position-y: 40%;
+}
+.contanier {
+  height: 100%;
+  justify-content: center;
+  border: solid 2px black;
+  margin: 0vw 5vw;
+  padding: 10%;
+}
+.contanier-safe-faster {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3rem;
+  width: max-content;
+  border: none;
+}
+.h1-p-safe-faster {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+/* section logistica */
+.first-paragraph-main {
+  color: #ff4500;
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.form-safe-faster {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.input-form-safe-faster {
+  width: 70%;
+  font-size: 2rem;
+  height: 35px;
+  padding: 2rem;
+}
+.input-form-safe-faster:focus {
+  outline: none;
+}
+.paragraph-safe-faster {
+  list-style: none;
+  text-decoration: none;
+  width: max-content;
+  background-color: #ff4500;
+  padding: 1.06rem;
+}
+.ancora-safe-faster {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+.ancora-safe-faster:hover,
+.ancora-safe-faster:active {
+  color: black;
+}
+/* section 2, pedidos */

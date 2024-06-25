@@ -7,12 +7,21 @@
 html {
   font-size: 62.5%;
 }
+/* keyframes */
 @font-face {
   font-family: "font-primaria";
 
   src: local(arial),
     url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 }
+@keyframes bloco-header{
+  from {
+    transform: translateX(0);
+  }
+  to   {transform: translateY(100%); }
+}
+
+
 body {
   font-family: font-primaria;
 }
@@ -69,6 +78,12 @@ nav {
 }
 .contanier-li ul {
   display: none;
+  
+ 
+ 
+ 
+  
+  
 }
 .lista-header a {
   display: flex;
@@ -103,24 +118,106 @@ nav {
   position: absolute;
   left: 10%;
   top: 10%;
-  opacity: 1;
-
-  transition-duration: 2s;
-  transition-delay: 1;
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
   transform: translate(0.1rem, 7rem);
+  
   padding: 2rem;
-
-  background-color: white;
+  
+  
+ 
+ 
   box-shadow: inset 0rem 0rem 1.2rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
 }
+.transition-ancora-header{
+  
+  
+  position: relative;
+  transition: color 1s;
+  width: 100px;
+  color: black !important;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+
+  
+.transition-ancora-header::before{
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  bottom: 0;
+  left: 50%;
+  
+
+  background-color: #150601;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.transition-ancora-header:hover::before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
 ul .transition-ancora-header:hover {
+  visibility: visible;
+ 
+  
+
+
+ 
+  
   width: max-content;
   padding: 0.5rem;
-  transition: 1s;
-  background-color: black;
-  color: red;
+
+  
+  
+  transition-timing-function:linear;
+  background: none;
+
+  transition: color 0.5s, width 1s;
+  
+  padding-bottom: 0;
+  
+  
+  
+  
+
+
+
+ 
+  
+
+  
+ color: #ff4500 !important;
+  
+  
+
+
+  /* background-color: black;
+  color: red; */
 }
 .bloco-registro {
   background-color: #ff4500;
@@ -132,3 +229,4 @@ ul .transition-ancora-header:hover {
 .bloco-registro:active {
   background-image: linear-gradient(90deg, #150601, #ff4500);
 }
+/* main section 1 */

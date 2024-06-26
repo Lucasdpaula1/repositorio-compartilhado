@@ -57,6 +57,10 @@ h1 {
   font-weight: 900;
   font-size: 5rem;
 }
+h2 {
+  font: 900;
+  font-size: 3rem;
+}
 
 .imagem-header {
   background-image: url(./img/images.jpg);
@@ -224,6 +228,7 @@ ul .transition-ancora-header:hover {
   gap: 1rem;
 }
 /* section logistica */
+
 .first-paragraph-main {
   color: #ff4500;
   font-weight: 900;
@@ -245,6 +250,11 @@ ul .transition-ancora-header:hover {
 .input-form-safe-faster:focus {
   outline: none;
 }
+.block-h2-section-2 {
+  display: flex;
+  flex-flow: column;
+  gap: 0.6rem;
+}
 .paragraph-safe-faster {
   list-style: none;
   text-decoration: none;
@@ -262,19 +272,112 @@ ul .transition-ancora-header:hover {
   color: black;
 }
 /* section 2, pedidos */
-.second-section{
-padding-top: 2rem;
-height: 25vw;
-  
+.second-section {
+  padding-top: 2rem;
+  height: 23vw;
+  margin: 0;
 }
-.contanier-second-section{
+.contanier-second-section {
   background-color: #f3f4f6;
   margin-left: 0;
   margin-right: 0;
- border: none;
+  border: none;
 
+  display: flex;
 
+  height: max-content;
+  padding: 0;
+
+  align-items: center;
+  gap: 3rem;
 }
-.the-first-bloco-second-section{
-  
+.the-first-bloco-second-section {
+  width: 30vw;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  padding: 2rem;
 }
+
+.form-get-a-quote {
+  width: max-content;
+  display: flex;
+  flex-flow: column;
+
+  height: 100%;
+  padding: 6rem;
+  gap: 2rem;
+  background-color: #ff4500;
+}
+.second-paragraph {
+  font-size: 1.3rem;
+}
+.section-get-a-quote-second {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.section-get-a-quote-second div p {
+  font-weight: 900;
+  font-size: 1.68rem;
+}
+.h3-second-section {
+  display: flex;
+  flex-flow: column;
+  gap: 0.2rem;
+}
+.section-get-a-quote-one p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.section-get-a-quote-one {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  height: 100%;
+}
+.input-get-a {
+  padding: 1rem 2rem;
+  text-align: start;
+}
+.input-get-a:nth-child(4) {
+  background-color: #545454;
+  color: white;
+  text-align: center;
+}
+.input-get-a:focus {
+  outline: none;
+}
+.input-get-a:nth-child(4) span {
+  position: relative;
+}
+
+.input-get-a:nth-child(4) span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  height: 0.2rem;
+  right: 0;
+
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 1s;
+}
+.input-get-a:nth-child(4) span:hover:before {
+  background-image: linear-gradient(90deg, #150601, #ff4500);
+  right: 0;
+  transform-origin: left;
+
+  visibility: visible;
+
+  transform: scaleX(1);
+  transition: all 1s ease-in-out;
+}
+.input-get-a:nth-child(4):hover {
+  background-color: white;
+  color: black;
+}
+/* third section */

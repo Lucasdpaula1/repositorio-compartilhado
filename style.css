@@ -26,6 +26,7 @@ html {
 
 body {
   font-family: font-primaria;
+  background-color: white;
 }
 
 header {
@@ -261,3 +262,19 @@ ul .transition-ancora-header:hover {
   color: black;
 }
 /* section 2, pedidos */
+.second-section{
+padding-top: 2rem;
+height: 25vw;
+  
+}
+.contanier-second-section{
+  background-color: #f3f4f6;
+  margin-left: 0;
+  margin-right: 0;
+ border: none;
+
+
+}
+.the-first-bloco-second-section{
+  
+}

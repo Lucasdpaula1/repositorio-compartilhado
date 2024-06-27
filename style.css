@@ -292,7 +292,7 @@ ul .transition-ancora-header:hover {
   gap: 3rem;
 }
 .the-first-bloco-second-section {
-  width: 30vw;
+  width: 40vw;
   display: flex;
   flex-flow: column;
   gap: 2rem;
@@ -306,7 +306,7 @@ ul .transition-ancora-header:hover {
 
   height: 100%;
   padding: 6rem;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #ff4500;
 }
 .second-paragraph {

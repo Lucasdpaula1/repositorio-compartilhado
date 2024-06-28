@@ -40,6 +40,7 @@ header {
   box-shadow: 1rem 1.2rem 1.2rem 0px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -396,7 +397,7 @@ ul .transition-ancora-header:hover {
   gap: 1rem;
   align-items: center;
 }
-.global {
+.global-one {
   display: flex;
   gap: 2rem;
 }
@@ -465,6 +466,7 @@ ul .transition-ancora-header:hover {
   text-transform: uppercase;
   position: relative;
 }
+
 .list-third-section:before {
   content: "";
   position: absolute;
@@ -541,4 +543,40 @@ ul .transition-ancora-header:hover {
 }
 .list-third-section:last-child {
   padding: 0.8rem 1.5rem;
+}
+.background-imagem-third-section {
+  background-image: url(https://media-for1-1.cdn.whatsapp.net/v/t61.24694-24/380070677_955223002832054_660112314357167776_n.jpg?ccb=11-4&oh=01_Q5AaIGJ-G0QPC2TsZLUWC9xklrAPVypGfCiSLU2PCehc3BFU&oe=6683408C&_nc_sid=e6ed6c&_nc_cat=109);
+
+  background-size: cover;
+
+  background-position-y: -0.5rem;
+
+  width: 100%;
+  height: 78%;
+}
+.div-second-section {
+  display: flex;
+  gap: 1.2rem;
+
+  height: 14vw;
+  width: 12vw;
+  border-bottom: solid 2px #ff4700;
+}
+.h2-modificado {
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.imagem2 {
+  background-image: url(./img/pedro.jfif);
+
+  background-position-y: -8rem;
+}
+.image3 {
+  background-image: url(./img/foto-samuel.jfif);
+  background-position-y: -8rem;
+  background-position-x: 1rem;
+}
+.imagem4 {
+  background-image: url(./img/foto-zécolmeia.jfif);
 }

@@ -29,9 +29,9 @@ body {
   background-color: white;
 }
 footer {
-  background-color: white;
+  background-color: #020234;
   width: 100%;
-  height: max-content;
+
   border: solid 2px black;
 }
 
@@ -720,4 +720,151 @@ svg {
 }
 .background-imagem-third-section-2a {
   background-image: url(https://blog.xpeducacao.com.br/wp-content/uploads/2023/01/analise-de-dados-python.jpg);
+}
+/* inicio do footer */
+.primeira-div-footer {
+  margin: 0;
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  border: none;
+}
+.h2-footer {
+  color: #ff4500;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.first-li-footer svg {
+  width: 5%;
+  height: 1%;
+  fill: black;
+  stroke: black;
+}
+
+.first-li-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+.ancora-footer {
+  text-decoration: none;
+  color: inherit;
+}
+.second-ul-footer {
+  display: flex;
+  gap: 0.5rem;
+}
+.second-ul-footer li {
+  list-style: none;
+}
+.svg-footer:nth-child(1) {
+  width: 3rem;
+  height: 3rem;
+}
+.second-ul-li {
+  width: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: max-content;
+
+  border-radius: 100%;
+}
+.second-ul-footer li:nth-child(3n + 1) .svg-footer:hover {
+  stroke: #361ae6;
+}
+.second-ul-footer li:nth-child(3) .svg-footer:hover {
+  stroke: lime;
+}
+.second-ul-footer li:nth-child(2) .svg-footer:hover {
+  stroke: #a300a7;
+}
+.div-first-h2-footer {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  font-size: 2rem;
+  flex: 1;
+}
+/* inicio do segundo bloco do primeiro bloco da section footer */
+.li-second-footer {
+  list-style: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.li-second-footer p {
+  display: none;
+}
+.li-second-footer::before {
+  content: url(https://img.icons8.com/?size=24&id=84869&format=png);
+
+  transform: rotate(0deg);
+  transition: all 0.2s;
+}
+.li-second-footer:hover::before {
+  transform: rotate(180deg);
+  transition: all 1s;
+}
+.li-second-footer a {
+  text-decoration: none;
+  color: white;
+}
+.li-second-footer:hover a,
+.li-second-footer:active a {
+  color: #ff4500;
+}
+.paragraph-footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  padding: 0rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+  align-self: stretch;
+  border: none;
+}
+.form-footer {
+  display: flex;
+  align-items: center;
+}
+.form-footer input {
+  border: none;
+  font-size: 1.5rem;
+  width: calc(100% + 2rem);
+  height: 2rem;
+  justify-self: stretch;
+  padding: 2rem;
+}
+.form-footer input:focus {
+  outline: none;
+}
+.last-div-paragraph {
+  color: white;
+  display: flex;
+  font-size: 1.8rem;
+  flex-flow: column;
+  text-transform: capitalize;
+}
+.last-div-paragraph span {
+  color: #ff4700;
+}
+.segunda-div-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+.last-div-h3-footer {
+  display: flex;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 400;
+  gap: 2rem;
 }
